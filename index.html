@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping App- Final Project</title>
+    <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="stylesheet" href="/Base/base-style.css" type="text/css">
+    <script src="./index.js" type="text/javascript"></script>
+    <script src="/Base/base-count.js" type="text/javascript"></script>
+    
+</head>
+
+<body>
+
+    
+
+<header>
+    <nav id="topbar">
+        <div id="left-menu">
+            <div id="logo"><a href="/index.html"><span id="shop-text-bold">Shop</span>lane</a></div>
+            <div id="header-links-wrapper">
+                <a href="#clothing-div">Clothing</a>
+                <a href="#accessories-div">Accessories</a>
+            </div>  
+        </div>
+        <div id="search-icon-single">
+            <i class="fas fa-search"></i>
+        </div>
+        <div id="search-wrapper">
+            <i class="fas fa-search"></i>
+            <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories" />
+        </div>
+        <div id="right-menu">
+            <div id="cart-wrapper">
+                <p id="cart-count">0</p>
+                <a href="/CheckOutPage/checkout-cart.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <img src="/assets/profile-pic.png" />
+        </div>
+        <div id="hamburger-icon">
+            <i id="hamburger-icon-i" class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <ul class="nav-links" id="hamburger-nav-div">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#clothing-div">Clothings</a></li>
+        <li><a href="#accessories-div">Accessories</a></li>
+    </ul>
+</header>
+
+    <main>
+      
+        <section>
+            <div class="center">
+                <img src="/assets/slider/img1.png"  alt="img1"/>
+                <img src="/assets/slider/img2.png"  alt="img2"/>
+                <img src="/assets/slider/img3.png"  alt="img3"/>
+                <img src="/assets/slider/img4.png"  alt="img4"/>
+            </div>
+        </section>
+
+        
+            <div id="clothing-div" class="homepage-div">
+                <h1 class="homepage-headings">Clothing for Men and Women</h1>
+                <div class="item-card-wrapper"  id="clothing-item-card-wrapper">
+                    <!-- <div class="item-card">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="">
+                        <div>
+                            <h3>Navy Blue Solid Sweatshirt</h3>
+                            <p>United Colors of Benetton</p>
+                            <h3>RS 2599</h3>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="accessories-div"  class="homepage-div">
+                <h1 class="homepage-headings">Accessories for Men and Women</h1>
+                <div class="item-card-wrapper" id="accessories-item-card-wrapper">
+                    <!-- <div class="item-card">
+                        <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803247/2019/5/27/624dac60-4c42-4902-bba1-30a51cc7f43c1558948536543-Apple-Unisex-Smart-Watches-1441558948536225-1.jpg"
+                            alt="">
+                        <div>
+                            <h3>Navy Blue Solid Sweatshirt</h3>
+                            <p>United Colors of Benetton</p>
+                            <h3>RS 2599</h3>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <img id="edyoda-projects-logo" src="/assets/edyoda-logo.png" alt="EdYoda Projects Logo" />
+   
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link extra-margin">Building 101</p>
+            <p href="/" class="footer-link extra-margin">Central Avenue</p>
+            <p href="/" class="footer-link extra-margin">LA - 902722</p>
+            <p href="/" class="footer-link extra-margin">United States</p>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+#topbar {
+  width: 100%;
+  box-shadow: 0 2px 5px #ccc;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 8%;
+}
+
+.nav-links {
+  position: fixed;
+  right: 0;
+  height: 89vh;
+  top: 10.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  transform: translateX(100%);
+  transition: 0.5s ease-in;
+  background: #009688;
+  z-index: 100;
+}
+.nav-links li {
+  opacity: 1;
+  margin-top: 100px;
+  list-style: none;
+}
+.nav-links li a {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+#search-icon-single {
+  display: none;
+}
+
+#left-menu {
+  display: inline-flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#logo > a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+#logo {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+#logo span {
+  font-weight: 800;
+}
+
+#header-links-wrapper {
+  display: flex;
+}
+
+#header-links-wrapper > a {
+  text-decoration: none;
+  color: black;
+  margin-left: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#search-wrapper {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+#search-wrapper > i {
+  position: absolute;
+  color: #999;
+  font-size: 18px;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+#search-box {
+  width: 100%;
+  border: 1px solid rgb(245, 242, 242);
+  background-color: rgb(245, 242, 242);
+  box-sizing: border-box;
+  padding: 10px 24px 8px 48px;
+  color: black;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#right-menu {
+  display: inline-flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#cart-wrapper {
+  position: relative;
+  margin-right: 32px;
+}
+
+#cart-count {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  background-color: #009688;
+  color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+#cart-wrapper > a {
+  text-decoration: none;
+  color: black;
+}
+
+#cart-wrapper i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#right-menu > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#hamburger-icon {
+  display: none;
+}
+
+main {
+  width: 100%;
+  min-height: 80vh;
+  box-sizing: border-box;
+  margin-top: 100px;
+  padding-bottom: 8%;
+}
+
+#edyoda-projects-logo {
+  width: 128px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+footer {
+  width: 100%;
+  background-color: #1c1b1e;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 4% 8%;
+}
+
+footer > div {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+footer > div:first-of-type {
+  padding-left: 0;
+}
+
+.footer-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  opacity: 0.9;
+  letter-spacing: 1px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: white;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.extra-margin {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  #topbar {
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+  }
+
+  #left-menu {
+    display: inline-block;
+  }
+
+  #search-wrapper {
+    display: none;
+  }
+
+  #search-icon-single {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 16px;
+  }
+
+  #header-links-wrapper {
+    display: none;
+  }
+
+  #logo {
+    font-size: 24px;
+  }
+
+  #right-menu {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #cart-count {
+    top: -10px;
+  }
+
+  #cart-wrapper {
+    margin-right: 24px;
+  }
+
+  #right-menu > img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+
+  #hamburger-icon {
+    display: inline-block;
+    font-size: 20px;
+  }
+  #edyoda-projects-logo {
+    width: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  main {
+    width: 100%;
+    min-height: none;
+    margin-top: 70px;
+    padding-bottom: 8%;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer > div {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
